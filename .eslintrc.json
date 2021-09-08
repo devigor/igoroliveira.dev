@@ -8,7 +8,7 @@
             "version": "detect"
         }
     },
-    "ignorePatterns": [".scss"],
+    "ignorePatterns": ["*.scss"],
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
