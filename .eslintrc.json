@@ -3,12 +3,12 @@
         "browser": true,
         "es2021": true
     },
-    "ignorePatterns": [".scss"],
     "settings": {
         "react": {
             "version": "detect"
         }
     },
+    "ignorePatterns": [".scss"],
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
