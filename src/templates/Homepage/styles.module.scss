@@ -1,0 +1,134 @@
+.homeContainer {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  'right right left'
+  ;
+}
+
+.homeTitle {
+  font-family: 'Lora', sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.homeSubtitle {
+  font-family: 'Fenix', sans-serif;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+.rightSide {
+  grid-area: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10rem;
+  background: #F9F1F0;
+}
+
+.leftSide {
+  grid-area: left;
+  background: #F86B5C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+.homeMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+
+  .menuItem a:hover {
+    border-bottom: 4px solid #ffffff;
+    padding: 6px 0; 
+  }
+
+  ul li a {
+    transition: 0.3s ease;
+    line-height: 6rem;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+    color: #F9F1F0;
+  }
+}
+
+.menuItem a {
+  transition: 0.3s ease;
+  font-family: 'Lora', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.iconGroup {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 970px) {
+  .rightSide {
+    padding-left: 3rem;
+  }
+
+  .homeMenu ul li a {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+}
+
+@media (max-width: 769px) {
+  .homeContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .rightSide {
+    align-items: center;
+    padding-left: 0;
+  }
+  .mobileMenu {
+    display: block;
+  }
+
+  .menuItem a:hover {
+    border-bottom: 4px solid #334257;
+    padding: 6px 0; 
+  }
+
+  .mobileMenu a {
+    color: #F86B5C;
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .leftSide {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .homeTitle {
+    font-size: 2rem;
+  }
+  .homeSubtitle {
+    font-size: 1rem;
+    line-height: 2.5rem;
+  }
+  .mobileMenu a {
+    font-size: 1.1rem;
+  }
+}
