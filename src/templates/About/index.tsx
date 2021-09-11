@@ -1,3 +1,4 @@
+import Header from 'Components/Header'
 import S from './styles.module.scss'
 
 export type AboutProps = {
@@ -7,11 +8,14 @@ export type AboutProps = {
 
 export default function Aboutpage({ photo, description }: AboutProps) {
   return (
-    <main className={S.aboutContainer}>
-      <div className={S.infoContainer}>
-        <img src={photo} alt="Homem de óculos em fundo amarelo com sorriso de canto de rosto" />
-        <div className={S.aboutText} dangerouslySetInnerHTML={{ __html: description }} />
-      </div>
-    </main>
+    <>
+      <Header />
+      <main className={S.aboutContainer}>
+        <div className={S.infoContainer}>
+          <img src={photo} alt="Homem de óculos em fundo amarelo com sorriso de canto de rosto" />
+          <div className={S.aboutText} dangerouslySetInnerHTML={{ __html: description }} />
+        </div>
+      </main>
+    </>
   )
 }

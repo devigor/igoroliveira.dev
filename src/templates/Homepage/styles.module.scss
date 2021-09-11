@@ -3,9 +3,7 @@
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: 
-  'right right left'
-  ;
+  grid-template-areas: 'right right left';
 }
 
 .homeTitle {
@@ -29,12 +27,12 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 10rem;
-  background: #F9F1F0;
+  background: #f9f1f0;
 }
 
 .leftSide {
   grid-area: left;
-  background: #F86B5C;
+  background: #f86b5c;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,7 +54,7 @@
     font-size: 4rem;
     letter-spacing: 1px;
     padding-bottom: 1rem;
-    color: #F9F1F0;
+    color: #f9f1f0;
   }
 }
 
@@ -64,7 +62,6 @@
   transition: 0.3s ease;
   font-family: 'Lora', sans-serif;
   font-weight: 500;
-  letter-spacing: 1px;
 }
 
 .iconGroup {
@@ -83,7 +80,6 @@
     font-size: 3rem;
     line-height: 4rem;
   }
-
 }
 
 @media (max-width: 769px) {
@@ -100,7 +96,7 @@
   }
 
   .mobileMenu a {
-    color: #F86B5C;
+    color: #f86b5c;
     font-size: 2rem;
     letter-spacing: 1px;
   }
