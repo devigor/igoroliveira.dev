@@ -1,0 +1,29 @@
+.aboutContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.infoContainer {
+  max-width: 960px;
+
+  img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+  }
+}
+
+.aboutText {
+  margin-top: 1rem;
+  p {
+    font-family: 'Lora', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 30px;
+    letter-spacing: 2px;
+    color: #334257;
+  }
+}
