@@ -1,0 +1,31 @@
+.wrapper {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+  padding: 2rem;
+}
+
+.item {
+  color: #000000;
+  font-family: 'Lora', sans-serif;
+
+  h2 {
+    font-size: 1.3rem;
+    padding-bottom: 0.6rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+.containerItem {
+  padding: 1.4rem 1rem 1.4rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+  border-bottom: solid 1px #f86b5c;
+  position: relative;
+}

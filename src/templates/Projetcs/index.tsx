@@ -1,4 +1,5 @@
 import Header from "Components/Header"
+import S from './styles.module.scss'
 
 type ProjectProps = {
   projectTitle: string
@@ -14,12 +15,17 @@ export default function Projectpage({ projects }: ProjectsProps) {
   return (
     <>
       <Header />
-      <main>
-        <section>
+      <main className={S.wrapper}>
+        <section className={S.container}>
           <nav>
             { projects.map(project => (
-              <a key={project.projectTitle} href={project.projectUrl} target="_blank" rel="noreferrer">
-                <div>
+              <a
+                key={project.projectTitle}
+                href={project.projectUrl}
+                className={S.item}
+                target="_blank"
+                rel="noreferrer">
+                <div className={S.containerItem}>
                   <h2>{project.projectTitle}</h2>
                   <p>{project.projectDescription}</p>
                 </div>
